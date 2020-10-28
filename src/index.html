@@ -3,11 +3,64 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Oggo</title>
+    <link rel="icon" href="styles/icons/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <div class="menu">
+      <input
+        type="checkbox"
+        name="menu-active"
+        id="menu-active"
+      >
+      <label for="menu-active">
+        <div class="menu-toggle">
+          <div class="lines">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </label>
+      <div class="menu-cover"></div>
+    </div>
+
+    <div class="cube-container">
+      <div class="cube">
+        <div class="cube-side front">
+          <img
+            src="styles/images/cube-side__img--front.jpg"
+            alt="skyscraper"
+            class="cube-side__img"
+          >
+        </div>
+        <div class="cube-side back">
+          <video
+            class="cube-side__video"
+            autoplay
+            loop
+            muted
+          >
+            <source src="styles/video/cube-side__video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="cube-side left">
+          <img
+            src="styles/images/cube-side__img--left.jpg"
+            alt="skyscraper"
+            class="cube-side__img"
+          >
+        </div>
+        <div class="cube-side right">
+          <img
+            src="styles/images/cube-side__img--right.jpg"
+            alt="skyscraper"
+            class="cube-side__img"
+          >
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
